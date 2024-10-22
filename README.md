@@ -192,9 +192,9 @@ Le projet **GreenRoots** vise un public engagé et sensible aux questions enviro
       ## L'arborescence de l'application
 
     GreenRoots/
-│
-├── client/                    # Dossier pour le front-end de l'application (React, HTML, CSS)
-│   ├── public/                 # Fichiers publics, assets accessibles à tous
+-- │
+ -- ├── client/                    # Dossier pour le front-end de l'application (React, HTML, CSS)
+-- │   ├── public/                 # Fichiers publics, assets accessibles à tous
 │   │   ├── index.html          # Page HTML principale
 │   │   ├── favicon.ico         # Icône du site
 │   │   └── assets/             # Dossier des images, polices, et autres ressources
