@@ -188,4 +188,71 @@ Le projet **GreenRoots** vise un public engagé et sensible aux questions enviro
       ## Les navigateurs compatibles
 
       Le site doit être compatible avec les navigateurs Google Chrome, Mozilla Firefox, Safari et Microsoft Edge dans leurs versions actuelles ainsi que les deux versions précédentes. Une attention particulière sera portée à l'affichage et aux performances sur les plateformes mobiles.
-  
+
+      ## L'arborescence de l'application
+
+    GreenRoots/
+│
+├── client/                    # Dossier pour le front-end de l'application (React, HTML, CSS)
+│   ├── public/                 # Fichiers publics, assets accessibles à tous
+│   │   ├── index.html          # Page HTML principale
+│   │   ├── favicon.ico         # Icône du site
+│   │   └── assets/             # Dossier des images, polices, et autres ressources
+│   │       ├── images/         # Images utilisées dans l'application
+│   │       └── fonts/          # Polices
+│   │
+│   ├── src/                    # Code source du front-end (React)
+│   │   ├── components/         # Composants réutilisables
+│   │   ├── pages/              # Pages principales (Landing page, profil, achat d'arbre, etc.)
+│   │   ├── services/           # Services pour les appels API, gestion des données
+│   │   ├── styles/             # Fichiers CSS ou SCSS pour le style
+│   │   ├── App.js              # Composant principal de l'application
+│   │   ├── index.js            # Point d'entrée de l'application
+│   │   └── routes.js           # Gestion des routes dans l'application
+│   │
+│   ├── package.json            # Dépendances front-end et scripts
+│   ├── .env                    # Variables d'environnement front-end
+│   └── .gitignore              # Fichiers à ignorer pour Git dans le client
+│
+├── server/                     # Dossier pour le back-end (Node.js, Express)
+│   ├── config/                 # Configuration du serveur et de la base de données
+│   │   ├── db.js               # Configuration de la base de données (PostgreSQL, MongoDB, etc.)
+│   │   ├── dotenv.js           # Configuration des variables d'environnement
+│   │   └── auth.js             # Gestion de l'authentification et de la sécurité
+│   │
+│   ├── controllers/            # Gestion de la logique métier (CRUD des arbres, utilisateurs)
+│   ├── models/                 # Modèles de données (Arbre, Utilisateur, Commande)
+│   │   ├── Tree.js             # Modèle de l'arbre
+│   │   ├── User.js             # Modèle de l'utilisateur
+│   │   └── Order.js            # Modèle des commandes
+│   │
+│   ├── routes/                 # Routes API (arbre, utilisateur, commande)
+│   │   ├── treeRoutes.js       # Routes pour les arbres
+│   │   ├── userRoutes.js       # Routes pour les utilisateurs
+│   │   └── orderRoutes.js      # Routes pour les commandes
+│   │
+│   ├── middleware/             # Middleware pour gérer les autorisations, erreurs, etc.
+│   ├── server.js               # Point d'entrée du serveur Express
+│   ├── package.json            # Dépendances back-end et scripts
+│   ├── .env                    # Variables d'environnement back-end
+│   └── .gitignore              # Fichiers à ignorer pour Git dans le serveur
+│
+├── database/                   # Dossier pour la base de données (migrations, seeds)
+│   ├── migrations/             # Scripts de migration de la base de données
+│   ├── seeds/                  # Fichiers pour peupler la base de données initialement
+│   └── schema.sql              # Schéma SQL de la base de données
+│
+├── tests/                      # Tests pour l'application (unitaires, intégration, end-to-end)
+│   ├── client/                 # Tests front-end (Jest, React Testing Library)
+│   ├── server/                 # Tests back-end (Jest, Supertest)
+│   └── e2e/                    # Tests end-to-end (Cypress, Selenium)
+│
+├── docs/                       # Documentation du projet (API, déploiement, etc.)
+│   ├── api/                    # Documentation API (Postman, Swagger)
+│   └── README.md               # Documentation principale du projet
+│
+├── docker-compose.yml           # Configuration de Docker Compose pour orchestrer les services
+├── Dockerfile                   # Fichier Docker pour créer l'image du projet
+├── README.md                    # Fichier README avec présentation du projet et instructions
+└── .gitignore                   # Fichiers à ignorer pour Git à la racine du projet
+
