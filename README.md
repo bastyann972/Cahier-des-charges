@@ -188,3 +188,4 @@ Le projet **GreenRoots** vise un public engagé et sensible aux questions enviro
       ## Les navigateurs compatibles
 
       Le site doit être compatible avec les navigateurs Google Chrome, Mozilla Firefox, Safari et Microsoft Edge dans leurs versions actuelles ainsi que les deux versions précédentes. Une attention particulière sera portée à l'affichage et aux performances sur les plateformes mobiles.
+  
