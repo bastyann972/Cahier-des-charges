@@ -190,11 +190,10 @@ Le projet **GreenRoots** vise un public engagé et sensible aux questions enviro
       Le site doit être compatible avec les navigateurs Google Chrome, Mozilla Firefox, Safari et Microsoft Edge dans leurs versions actuelles ainsi que les deux versions précédentes. Une attention particulière sera portée à l'affichage et aux performances sur les plateformes mobiles.
 
       ## L'arborescence de l'application
-
-    GreenRoots/
--- │
- -- ├── client/                    # Dossier pour le front-end de l'application (React, HTML, CSS)
--- │   ├── public/                 # Fichiers publics, assets accessibles à tous
+GreenRoots/
+│
+├── client/                    # Dossier pour le front-end de l'application (React, HTML, CSS)
+│   ├── public/                 # Fichiers publics, assets accessibles à tous
 │   │   ├── index.html          # Page HTML principale
 │   │   ├── favicon.ico         # Icône du site
 │   │   └── assets/             # Dossier des images, polices, et autres ressources
@@ -255,4 +254,5 @@ Le projet **GreenRoots** vise un public engagé et sensible aux questions enviro
 ├── Dockerfile                   # Fichier Docker pour créer l'image du projet
 ├── README.md                    # Fichier README avec présentation du projet et instructions
 └── .gitignore                   # Fichiers à ignorer pour Git à la racine du projet
+
 
